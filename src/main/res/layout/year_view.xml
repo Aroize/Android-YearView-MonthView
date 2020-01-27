@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        tools:text="2020"/>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout_year"
+        app:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/january"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/february"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/march"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/april"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/may"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/june"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/july"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/august"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/september"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/october"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/november"
+            app:layout_columnWeight="1"/>
+        <ru.rain.ifmo.yearcalendar.MonthView
+            android:id="@+id/december"
+            app:layout_columnWeight="1"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
